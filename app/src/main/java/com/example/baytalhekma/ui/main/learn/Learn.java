@@ -61,7 +61,7 @@ public class Learn extends Fragment {
         binding.learnTabs.addTab(binding.learnTabs.newTab().setText("كتب"));
         binding.learnTabs.addTab(binding.learnTabs.newTab().setText("دورات"));
         binding.learnTabsViewpager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
-        LearnTabAdapter tabAdapter = new LearnTabAdapter(getParentFragmentManager(), this.getLifecycle());
+        LearnTabAdapter tabAdapter = new LearnTabAdapter(getChildFragmentManager(), this.getLifecycle());
         tabAdapter.addFragment(new LearnMyBooks());
         tabAdapter.addFragment(new LearnMyCourses());
         binding.learnTabsViewpager.setAdapter(tabAdapter);
