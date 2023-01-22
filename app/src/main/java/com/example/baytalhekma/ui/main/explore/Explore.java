@@ -63,7 +63,7 @@ public class Explore extends Fragment {
         binding.exploreTabs.addTab(binding.exploreTabs.newTab().setText("كتب"));
         binding.exploreTabs.addTab(binding.exploreTabs.newTab().setText("دورات"));
         binding.exploreTabsViewpager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
-        LearnTabAdapter tabAdapter = new LearnTabAdapter(getParentFragmentManager(), this.getLifecycle());
+        LearnTabAdapter tabAdapter = new LearnTabAdapter(getChildFragmentManager(), this.getLifecycle());
         tabAdapter.addFragment(new ExploreBooks());
         tabAdapter.addFragment(new ExploreCourses());
         binding.exploreTabsViewpager.setAdapter(tabAdapter);

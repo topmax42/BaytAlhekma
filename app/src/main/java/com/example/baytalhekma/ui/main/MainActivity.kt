@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         fragment.arguments = b
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragmentContainerView2, fragment)
+        fragmentTransaction.replace(R.id.fragmentContainerView, fragment)
         fragmentTransaction.commit()
     }
 
