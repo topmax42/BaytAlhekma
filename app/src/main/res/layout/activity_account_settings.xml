@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.myaccount.accountpages.AccountSettings"
+        android:orientation="vertical"
+        android:paddingHorizontal="23dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginTop="46dp">
+
+            <TextView
+                android:id="@+id/accountMyAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="حسابي"
+                android:textColor="@color/text_black"
+                android:textSize="18dp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/accountSubMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/accountMyAccount"
+                android:src="@drawable/angle_left_solid"
+                android:layout_margin="5dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/accountSubMenu"
+                android:text="إعدادات حساب"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/backAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:backgroundTint="#80FFFFFF"
+                android:backgroundTintMode="src_over"
+                android:src="@drawable/angle_left_solid"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="الإسم"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/text_black"/>
+
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="سلافة ماجد السيد"
+        android:inputType="textPersonName"
+        android:paddingVertical="15dp"
+        android:singleLine="true"
+        android:textDirection="rtl" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="رقم الهاتف"
+            android:textDirection="rtl"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/text_black"/>
+
+        <EditText
+            android:id="@+id/AccountPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingVertical="15dp"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="01023456789"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="11dp"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="البريد الإلكتؤوني"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/text_black"/>
+
+        <EditText
+            android:id="@+id/AccountEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingVertical="15dp"
+            android:textDirection="rtl"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Mohamed@gmail.com"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="11dp"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="الجامعة"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/text_black"/>
+
+
+
+
+
+        <EditText
+            android:id="@+id/AccountUniversity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingVertical="15dp"
+            android:textDirection="rtl"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Cairo University"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="11dp"
+            android:focusable="false"/>
+        <Button
+            android:id="@+id/changeAccountPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="تغيير كلمة المرور"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/text_black"
+            android:drawableLeft="@drawable/pen_solid"
+            style="?android:attr/borderlessButtonStyle"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:focusable="false"
+        android:background="@color/colorAccent"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+

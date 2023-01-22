@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.controluser.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingHorizontal="32dp"
+    android:id="@+id/activityloginlinealayout">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/angle_left_solid"
+        android:id="@+id/backlogin"
+        android:backgroundTint="#80FFFFFF"
+        android:backgroundTintMode="src_over"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="تسجيل الدخول"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="الايميل او رقم الهاتف"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/loginNameValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="15dp"
+        android:background="@drawable/btnlos2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginBottom="11dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="كلمة المرور"
+        android:gravity="right"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="13dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/loginPassValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="15dp"
+        android:background="@drawable/btnlos2"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/forgotpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="نسيت كلمة المرور"
+        android:textColor="@color/colorPrimaryDark"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/login"
+        android:background="@drawable/btnlos1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/google__g__logo_svg"
+            android:backgroundTint="#80FFFFFF"
+            android:backgroundTintMode="src_over"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/facebookicon"
+            android:backgroundTint="#80FFFFFF"
+            android:backgroundTintMode="src_over"/>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/twitter_icon"
+            android:backgroundTint="#80FFFFFF"
+            android:backgroundTintMode="src_over"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/apple_logo_e3dbf3ae34_seeklogo_com"
+            android:backgroundTint="#80FFFFFF"
+            android:backgroundTintMode="src_over"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/gotoRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/register"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryDark"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="ليس لديك حساب"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryDark"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+
+</LinearLayout>

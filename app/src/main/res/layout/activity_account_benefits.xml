@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.myaccount.accountpages.AccountBenefits"
+    android:orientation="vertical"
+    android:paddingHorizontal="32dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/benMyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="حسابي"
+            android:textColor="@color/text_black"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/benSubMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/benMyAccount"
+            android:src="@drawable/angle_left_solid"
+            android:layout_margin="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/benSubMenu"
+            android:gravity="center"
+            android:text="المساعدة" />
+
+        <ImageButton
+            android:id="@+id/backAccountBen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#80FFFFFF"
+            android:backgroundTintMode="src_over"
+            android:src="@drawable/angle_left_solid"
+            android:gravity="center"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:gravity="center"
+            android:layout_width="144dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn"
+            android:layout_alignParentRight="true"
+            android:text="العضوية النصف سنوية\n 300 جنيه"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:elevation="5dp"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_width="144dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn"
+            android:layout_alignParentLeft="true"
+            android:text="العضوية السنوية\n 500 جنيه"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:elevation="5dp"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/requirementsOfMembership"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/chevron_bottom_expand"
+        android:text="متطلبات العضوية"
+        android:layout_marginBottom="14dp"
+        android:background="@color/white"
+        android:textDirection="rtl"
+        android:gravity="start|center_vertical"
+        style="?android:attr/borderlessButtonStyle"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="صورة شخصية"
+        android:drawableRight="@drawable/dot"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:id="@+id/requirement1"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="صورة بطاقة"
+        android:drawableRight="@drawable/dot"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:id="@+id/requirement2"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="البيانات (الاسم- الجامعة- الفرقة الدراسية)"
+        android:drawableRight="@drawable/dot"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:id="@+id/requirement3"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/benefitsOfMembership"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/chevron_bottom_expand"
+        android:text="مميزات العضوية"
+        android:layout_marginBottom="14dp"
+        android:background="@color/white"
+        android:textDirection="rtl"
+        android:gravity="start|center_vertical"
+        style="?android:attr/borderlessButtonStyle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/layoutBenefits">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="خصم على جميع الدورات ل 720ج بدلا 1080ج والمستويات المتقدمة ل 980ج بدل 1350ج"
+        android:drawableRight="@drawable/dot"
+        android:padding="5dp"
+        android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خصم على جميع الدورات ل 720ج بدلا 1080ج والمستويات المتقدمة ل 980ج بدل 1350ج"
+            android:drawableRight="@drawable/dot"
+            android:padding="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خصم على جميع الدورات ل 720ج بدلا 1080ج والمستويات المتقدمة ل 980ج بدل 1350ج"
+            android:drawableRight="@drawable/dot"
+            android:padding="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خصم على جميع الدورات ل 720ج بدلا 1080ج والمستويات المتقدمة ل 980ج بدل 1350ج"
+            android:drawableRight="@drawable/dot"
+            android:padding="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خصم على جميع الدورات ل 720ج بدلا 1080ج والمستويات المتقدمة ل 980ج بدل 1350ج"
+            android:drawableRight="@drawable/dot"
+            android:padding="5dp"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

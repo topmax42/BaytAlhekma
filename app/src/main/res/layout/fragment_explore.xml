@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.explore.Explore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="32dp"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:queryHint="إبحث عن دورة او كتاب"
+                />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/magnifying_glass_solid"
+                android:background="@drawable/btn"
+                android:layout_gravity="end"
+                android:foregroundGravity="center"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exploreTabs"
+            android:padding="1dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/btnlosa"
+            app:tabSelectedTextColor="@color/white"
+            app:tabBackground="@color/white"
+            app:tabTextColor="@color/colorPrimaryDark"
+            app:tabIndicatorAnimationDuration="300"
+            app:tabIndicator="@drawable/tabindicator"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            app:tabIndicatorGravity="stretch">
+
+
+            <!--<com.google.android.material.tabs.TabItem
+                android:id="@+id/aaaaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>-->
+
+
+
+
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exploreTabsViewpager"
+            android:animateLayoutChanges="true"/>
+
+    </LinearLayout>
+</FrameLayout>

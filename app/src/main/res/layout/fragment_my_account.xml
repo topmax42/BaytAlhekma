@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.myaccount.MyAccount"
+    android:layout_marginHorizontal="36dp"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="46dp"
+        android:paddingBottom="80dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="حسابي"
+        android:textColor="@color/text_black"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="12dp"
+        android:id="@+id/ewew2"
+        app:cardCornerRadius="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:id="@+id/imageView1"
+            android:src="@drawable/accountface"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="سلافة ماجد السيد"
+            android:textColor="@color/text_black"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginBottom="33dp"
+            android:id="@+id/accountNameMain"/>
+        <Button
+            android:id="@+id/accountSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/angle_left_solid"
+            android:text="إعدادات الحساب"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:textDirection="rtl"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/accountMembership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/angle_left_solid"
+            android:text="بطاقة العضوية"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:textDirection="rtl"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/accountFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/angle_left_solid"
+            android:text="الأسئلة الشائعة"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:textDirection="rtl"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/accountHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/angle_left_solid"
+            android:text="المساعدة"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:textDirection="rtl"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/accountPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/angle_left_solid"
+            android:text="سياسة الخصوصية"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:textDirection="rtl"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/accountAppRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/angle_left_solid"
+            android:text="تقييم التطبيق"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:textDirection="rtl"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/accountMemberBenefits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/angle_left_solid"
+            android:text="مميزات العضوية"
+            android:layout_marginBottom="14dp"
+            android:background="@color/white"
+            android:textDirection="rtl"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="تابعنا عبر"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="start|center_vertical"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:layoutDirection="ltr">
+
+
+            <ImageButton
+                android:id="@+id/accountFB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.5dp"
+                android:src="@drawable/facebookround"
+                android:layout_gravity="left"
+                android:background="@color/white"/>
+            <ImageButton
+                android:id="@+id/accountTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.5dp"
+                android:src="@drawable/twitterround"
+                android:layout_gravity="end"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/accountIG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="10.5dp"
+                android:src="@drawable/instagramround"
+                android:background="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="تسجيل الخروج"
+            android:gravity="start"
+            android:textDirection="rtl"
+            android:layout_marginTop="28dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/buttonLogout"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

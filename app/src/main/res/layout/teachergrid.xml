@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="11dp"
+    android:elevation="5dp"
+    android:background="@drawable/box"
+    android:clickable="true"
+    android:id="@+id/teachergrid">
+
+    <!--<ImageView
+        android:id="@+id/teacherFace"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10dp"
+        android:foreground="@drawable/ellipse_566"
+        android:padding="5dp"
+        />-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:elevation="12dp"
+        android:id="@+id/teachercardface"
+        app:cardCornerRadius="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/teacherfaceimg"
+            android:src="@drawable/face"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/teacherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/box_text"
+        android:layout_marginBottom="13dp"/>
+
+    <TextView
+        android:id="@+id/teacherDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@color/box_fill"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/box_text"/>
+
+
+</LinearLayout>

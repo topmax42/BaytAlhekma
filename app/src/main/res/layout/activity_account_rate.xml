@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.myaccount.accountpages.AccountRate"
+    >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="237dp"
+        android:layout_height="219dp"
+        android:background="@color/white"
+        app:cardCornerRadius="24dp"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginVertical="13dp">
+
+           <ImageButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/xmark_solid"
+               android:layout_gravity="left"
+               android:layout_marginVertical="23dp"
+               android:background="@color/white"
+               android:id="@+id/xCloseRate"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:id="@+id/rateImg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قيمنا و ساعدنا لتطوير المحتوى"
+                android:layout_gravity="center"
+                android:id="@+id/rateWord"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="13dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_solid"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/star1"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_solid"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/star2"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_solid"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/star3"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_solid"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/star4"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_solid"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/star5"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btnrate"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+    </FrameLayout>

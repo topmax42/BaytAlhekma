@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mainactivity"
+    app:startDestination="@id/learn">
+
+    <fragment
+        android:id="@+id/explore"
+        android:name="com.example.baytalhekma.ui.main.explore.Explore"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
+    <fragment
+        android:id="@+id/learn"
+        android:name="com.example.baytalhekma.ui.main.learn.Learn"
+        android:label="fragment_learn"
+        tools:layout="@layout/fragment_learn" />
+    <fragment
+        android:id="@+id/teachers"
+        android:name="com.example.baytalhekma.ui.main.teacher.Teachers"
+        android:label="fragment_teachers"
+        tools:layout="@layout/fragment_teachers" />
+    <fragment
+        android:id="@+id/translate"
+        android:name="com.example.baytalhekma.ui.main.translate.Translate"
+        android:label="fragment_translate"
+        tools:layout="@layout/fragment_translate"
+        />
+    <fragment
+        android:id="@+id/myAccount"
+        android:name="com.example.baytalhekma.ui.main.myaccount.MyAccount"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account" />
+</navigation>

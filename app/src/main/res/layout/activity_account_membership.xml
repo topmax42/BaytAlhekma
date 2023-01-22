@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.myaccount.accountpages.AccountMembership"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="18dp">
+
+    <TextView
+        android:id="@+id/memberMyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:text="حسابي"
+        android:textColor="@color/text_black"
+        android:textSize="18dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/memberSubMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/memberMyAccount"
+        android:src="@drawable/angle_left_solid"
+        android:layout_margin="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/memberSubMenu"
+        android:gravity="center"
+        android:text="بطاقة العضوية" />
+
+    <ImageButton
+        android:id="@+id/backAccountMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="#80FFFFFF"
+        android:backgroundTintMode="src_over"
+        android:src="@drawable/angle_left_solid"
+        android:gravity="center"
+        />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5">
+
+        <ImageView
+            android:id="@+id/membershipBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/group_42924__1_"/>
+
+        <ImageView
+            android:id="@+id/membershipForeground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/group_42923__1_"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="32dp"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="希克迈特文化集团"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="阿拉伯语国家汉语教育之家"
+                android:textColor="@color/white"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="164dp"
+                android:layout_height="164dp"
+                android:elevation="12dp"
+                android:id="@+id/memberCard"
+                app:cardCornerRadius="164dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp">
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/memeberImage"
+                    android:src="@drawable/accountface"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="سلافة ماجد السيد"
+                android:textSize="32dp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:layout_marginVertical="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="جامعة كفر الشيخ"
+                android:textSize="24dp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:layout_marginVertical="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم العضوية : 3038"
+                android:textSize="24dp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:layout_marginVertical="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2021/2022"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:layout_marginVertical="8dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/qr"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layoutDirection="rtl">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/location_icon"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="174 شارع التحرير - عابدين - القاهرة"
+                    android:textColor="#000000" />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layoutDirection="rtl"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/call_icon"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ت: 20223936038"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/call_icon"
+                    android:layout_marginHorizontal="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ت: 201030328888"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.controluser.LoginorRegister"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageViewlor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        app:srcCompat="@drawable/mask_group_43"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textViewlor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/lorem"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewlor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="@string/loremipsum"
+        android:textAlignment="center"
+        android:textColor="@color/text_gray" />
+
+    <Button
+        android:id="@+id/buttonLoginlor"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btnlos1"
+        android:text="@string/login"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonRegisterlor"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btnlos2"
+        android:text="@string/register"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</LinearLayout>

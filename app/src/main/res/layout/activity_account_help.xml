@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.myaccount.accountpages.AccountHelp"
+    android:orientation="vertical"
+    android:paddingHorizontal="23dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="46dp">
+
+        <TextView
+            android:id="@+id/helpMyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="حسابي"
+            android:textColor="@color/text_black"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/helpSubMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/helpMyAccount"
+            android:src="@drawable/angle_left_solid"
+            android:layout_margin="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/helpSubMenu"
+            android:gravity="center"
+            android:text="المساعدة" />
+
+        <ImageButton
+            android:id="@+id/backAccountHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#80FFFFFF"
+            android:backgroundTintMode="src_over"
+            android:src="@drawable/angle_left_solid"
+            android:gravity="center"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/helpTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="15dp"
+        android:textDirection="rtl"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="الموضوع"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btnhlp"/>
+
+
+
+    <EditText
+        android:id="@+id/helpDescription"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="15dp"
+        android:textDirection="rtl"
+        android:gravity="right"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="الوصف"
+        android:singleLine="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/btnhlp"
+        />
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="إرسال"
+        android:background="@drawable/btnlos1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

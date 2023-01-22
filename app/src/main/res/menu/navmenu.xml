@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myAccount"
+        android:icon="@drawable/iconly_curved_profile"
+        android:title="حسابي"
+        android:enabled="true" />
+    <item
+        android:id="@+id/learn"
+        android:icon="@drawable/_82288f7dab268e0048f1b43629a5b8d"
+        android:title="تعلم"
+        android:enabled="true" />
+    <item
+    android:id="@+id/teachers"
+    android:icon="@drawable/_845_r0lvie5jqya2ntqtmjy__converted_"
+    android:title="المعلمون"
+    android:enabled="true" />
+    <item
+        android:id="@+id/translate"
+        android:icon="@drawable/group_43580"
+        android:title="ترجمة"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/explore"
+        android:title="اكتشف"
+        android:icon="@drawable/group_43578"
+        android:enabled="true"/>
+
+
+
+</menu>

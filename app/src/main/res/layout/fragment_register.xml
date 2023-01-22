@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.controluser.RegisterFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="23dp"
+            android:background="@color/white">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                app:srcCompat="@drawable/angle_left_solid"
+                android:id="@+id/backreg"
+                android:backgroundTint="#80FFFFFF"
+                android:backgroundTintMode="src_over"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/register"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="الإسم بالكامل"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/regNameValidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/registerName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="15dp"
+                android:background="@drawable/btnlos2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Mohamed Ahmed"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="11dp"
+                android:clickable="true"
+                android:focusableInTouchMode="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="البريد الإلكتؤوني"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/regEmailValidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="15dp"
+                android:background="@drawable/btnlos2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Mohamed@gmail.com"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="11dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="رقم الهاتف"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/regPhoneValidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/registerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="15dp"
+                android:background="@drawable/btnlos2"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="01023456789"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="11dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="رقم العضوية"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/regMemberValidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/registerMembership"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="15dp"
+                android:background="@drawable/btnlos2"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="111"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="11dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="الجامعة"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/regUniversityValidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="" />
+
+            <Spinner
+                android:id="@+id/registerUniversity"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="15dp"
+                android:background="@drawable/btnlos2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="11dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="كلمة المرور"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/regPasswordValidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/registerPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="15dp"
+                android:background="@drawable/btnlos2"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text=""
+                android:hint="********"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="26dp"/>
+
+
+
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/register"
+                android:background="@drawable/btnlos1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imageButtonG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/google__g__logo_svg"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonFB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/facebookicon"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonTwitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/twitter_icon"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonApple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:srcCompat="@drawable/apple_logo_e3dbf3ae34_seeklogo_com"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/gotoLoginnn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/login"
+                    android:background="@color/white"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+                <Button
+                    android:id="@+id/buttonHaveAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="لديك حساب"
+                    android:background="@color/white"
+                    android:textColor="@color/colorPrimaryDark"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
